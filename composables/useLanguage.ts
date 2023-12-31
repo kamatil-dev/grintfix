@@ -1,4 +1,4 @@
-import objectPath from "object-path";
+import { getProperty } from "dot-prop";
 
 export const useLanguage = (messages: any) => {
   const Messages = useState("LanguageMessages");
@@ -32,11 +32,7 @@ export const t = (key: string) => {
   const Messages = useState("LanguageMessages");
   const Language = useGlobalCookie("Language");
 
-  return objectPath.get(
-    Messages.value as object,
-    `${Language.value}.${key}`,
-    key
-  );
+  return getProperty(Messages.value as object, `${Language.value}.${key}`, key);
 };
 
 export const to = (path: any) => {

@@ -1,5 +1,8 @@
 <template>
-  <section class="px-10 sm:px-20 py-10 bg-primary text-white text-center">
+  <section
+    class="px-10 sm:px-20 py-10 text-center"
+    :class="!reverse ? 'bg-primary text-white' : 'bg-white text-primary'"
+  >
     <div v-if="title || description" class="mb-12">
       <h2 v-if="title" class="text-3xl" v-html="title"></h2>
       <span
@@ -72,11 +75,11 @@ onMounted(() =>
     autoplay: 3000,
     bound: true,
     direction: "rtl",
-    perView: 3,
+    perView: 4,
     gap: 40,
     breakpoints: {
       1024: {
-        perView: 2,
+        perView: 3,
       },
       600: {
         perView: 1,
