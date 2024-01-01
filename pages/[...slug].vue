@@ -60,11 +60,14 @@
 </template>
 <script setup>
 const route = useRoute(),
-  Language = useGlobalCookie("Language");
-const { data } = await useAsyncData(
-  (Language.value === "ar" ? "/ar" : "") + route.path,
-  () =>
-    queryContent((Language.value === "ar" ? "/ar" : "") + route.path).findOne()
+  Language = useGlobalCookie("Language"),
+  contentPath =
+    (Language.value === "ar" &&
+    (route.path.split("/").length <= 1 || route.path.split("/")[1] !== "ar")
+      ? "/ar"
+      : "") + route.path;
+const { data } = await useAsyncData(contentPath, () =>
+  queryContent(contentPath).findOne()
 );
 useContentHead(data);
 </script>
