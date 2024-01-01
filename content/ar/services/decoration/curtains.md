@@ -29,56 +29,6 @@ center: true
 ---
 ::
 
-
-::testimonials
----
-title: أراء العملاء
-description: ماذا يقول عنا عملائنا الأعزاء
-items:
-  - title: ابراهيم محمد
-    description: كل الشكر والاحترام لشركتكم الموقرة على الأسلوب الراقي في التعامل والمصداقية نتمنى لكم دوام التفوق والتميز ... تحياتي لكم
-
-  - title: محمد عبد العزيز
-    description: أود أشكركم على خدماتكم، استعنت بكم اكثر من مرة وتشرفت بالتعامل معكم العمل كان أكثر من ممتاز ... تحياتي لكم جميعا
-    
-  - title: عمرو أحمد
-    description: سررت بالتعامل مع شركتكم لاعمال خدمات الصيانة العامة، اشكركم علي مستوي الخدمه الرائع ولاول مره اجد عامل محترف وسريع جدا في انجاز العمل المطلوب
----
-::
-
-
-::features-hero
----
-image: "/assets/photo/Rectangle 46189.png"
-items:
-    - title: كوادر محترفة
-      description: فريقنا يتكون من محترفين وخبراء في المجال
-      icon: "/assets/icons/carbon_tool-kit.png"
-    - title: الالتزام بالمواعيد
-      description: خدمات 24/7 لضمان الإلتزام بالمواعيد المٌتفق عليها
-      icon: "/assets/icons/subway_time-5.png"
-    - title: أفضل الأسعار
-      description: نهتم بجودة العمل بقدر ما نهتم بتوفير أموالك
-      icon: "/assets/icons/fluent-msdl2_money.png"
----
-::
-
-::counter
----
-title: نمتاز بامتلاك الخبرة الكافية في مجال الصيانة
-description: على مدار سنين طويلة
-items:
-    - title: سنة من الخبرة
-      count: 30
-    - title: جائزة
-      count: 12
-    - title: مشاريع مكتملة
-      count: 46
-    - title: عميل سعيد
-      count: 35
----
-::
-
 ::image-slider
 ---
 items: 
@@ -122,6 +72,37 @@ items:
 ---
 ::
 
+::features-hero
+---
+image: "/assets/photo/Rectangle 46189.png"
+items:
+    - title: كوادر محترفة
+      description: فريقنا يتكون من محترفين وخبراء في المجال
+      icon: "/assets/icons/carbon_tool-kit.png"
+    - title: الالتزام بالمواعيد
+      description: خدمات 24/7 لضمان الإلتزام بالمواعيد المٌتفق عليها
+      icon: "/assets/icons/subway_time-5.png"
+    - title: أفضل الأسعار
+      description: نهتم بجودة العمل بقدر ما نهتم بتوفير أموالك
+      icon: "/assets/icons/fluent-msdl2_money.png"
+---
+::
+
+::counter
+---
+title: نمتاز بامتلاك الخبرة الكافية في مجال الصيانة
+description: على مدار سنين طويلة
+items:
+    - title: سنة من الخبرة
+      count: 30
+    - title: جائزة
+      count: 12
+    - title: مشاريع مكتملة
+      count: 46
+    - title: عميل سعيد
+      count: 35
+---
+::
 
 ::text
 ---
@@ -244,6 +225,21 @@ center: true
 ---
 ::
 
+::testimonials
+---
+title: أراء العملاء
+description: ماذا يقول عنا عملائنا الأعزاء
+items:
+  - title: ابراهيم محمد
+    description: كل الشكر والاحترام لشركتكم الموقرة على الأسلوب الراقي في التعامل والمصداقية نتمنى لكم دوام التفوق والتميز ... تحياتي لكم
+
+  - title: محمد عبد العزيز
+    description: أود أشكركم على خدماتكم، استعنت بكم اكثر من مرة وتشرفت بالتعامل معكم العمل كان أكثر من ممتاز ... تحياتي لكم جميعا
+    
+  - title: عمرو أحمد
+    description: سررت بالتعامل مع شركتكم لاعمال خدمات الصيانة العامة، اشكركم علي مستوي الخدمه الرائع ولاول مره اجد عامل محترف وسريع جدا في انجاز العمل المطلوب
+---
+::
 
 ::service-slider
 ---
