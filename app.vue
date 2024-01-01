@@ -464,7 +464,12 @@
     <NuxtLoadingIndicator />
     <NuxtPage />
 
-    <footer :class="{ 'mt-6': route.path !== '/' && route.path !== '/en' }">
+    <footer
+      :class="{
+        'mt-6':
+          route.path !== '/' && route.path !== '/ar' && route.path !== '/en',
+      }"
+    >
       <section
         class="py-10 px-10 sm:px-20 flex flex-col sm:flex-row gap-8 justify-between place-items-center bg-gray-100"
       >

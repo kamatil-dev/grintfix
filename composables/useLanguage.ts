@@ -42,8 +42,10 @@ export const to = (path: any) => {
       (!Language.value || Language.value === "ar" ? "/" : "/en/") + (path ?? "")
     );
   else {
-    if (Array.isArray(path.params.slug) && path.params.slug[0] === "en")
-      return path.path.replace("/en/", "/");
-    else return "/en" + path.path;
+    if (Array.isArray(path.params.slug)) {
+      if (path.params.slug[0] === "en") return path.path.replace("/en/", "/");
+      else if (path.params.slug[0] === "ar")
+        return path.path.replace("/ar/", "/en/");
+    } else return "/en" + path.path;
   }
 };
